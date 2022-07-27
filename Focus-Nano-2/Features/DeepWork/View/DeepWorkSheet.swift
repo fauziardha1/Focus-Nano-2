@@ -10,6 +10,15 @@ import SwiftUI
 struct DeepWorkSheet: View {
     @Environment(\.dismiss) var dismiss
     @State private var taskNotes : String = "  Notes"
+    
+    // for timer
+    @State private var pomodoroTimer = 1*60
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    private let taskTitle : String
+    init(title: String){
+        self.taskTitle = title
+    }
 
     var body: some View{
         ZStack{
@@ -22,7 +31,7 @@ struct DeepWorkSheet: View {
                     HStack{
                         Button(action: {
                             print("Hello")
-                            dismiss()
+//                            dismiss()
                             
                         }, label: {
                                 Text("Close")
@@ -47,7 +56,7 @@ struct DeepWorkSheet: View {
                         Text("Pomodoro Time")
                             .padding()
                         Spacer()
-                        Text("24:59")
+                        Text(stringCountDown(time: pomodoroTimer))
                             .padding()
                     }
                     .padding(.top)
@@ -61,7 +70,7 @@ struct DeepWorkSheet: View {
                         .padding(.leading,32)
                         .padding(.bottom, -4)
                     
-                    Text("Task's Title")
+                    Text(taskTitle )
                         .frame(width: g.size.width - 48, height: 50, alignment: .leading)
                         .padding(.leading)
                         .background(.white)
@@ -139,7 +148,62 @@ struct DeepWorkSheet: View {
                     
                    
                   
-                    VStack {
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Button(action:{}) {
+                                HStack {
+                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Container@*/VStack/*@END_MENU_TOKEN@*/ {
+                                        Image(systemName: "paperclip")
+                                            .foregroundColor(.white)
+                                            .font(.title3)
+                                            .cornerRadius(10)
+                                            .padding(2)
+                                        
+                                    }
+                                    .background(.blue)
+                                    .cornerRadius(10)
+                                    .padding(.leading,8)
+                                    .padding(.vertical,8)
+                                    
+                                    Text("Attach")
+                                        .padding([.trailing,.vertical],8)
+                                        .font(.subheadline)
+                                        .foregroundColor(.black)
+                                }
+                                .background(.white)
+                                .cornerRadius(33)
+                            .padding(.leading)
+                            }
+                            
+                            Button(action:{}) {
+                                HStack {
+                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Container@*/VStack/*@END_MENU_TOKEN@*/ {
+                                        Image(systemName: "camera")
+                                            .foregroundColor(.white)
+                                            .font(.title3)
+                                            .cornerRadius(10)
+                                            .padding(2)
+                                        
+                                    }
+                                    .background(Color(UIColor.systemRed))
+                                    .cornerRadius(10)
+                                    .padding(.leading,8)
+                                    .padding(.vertical,8)
+                                    
+                                    Text("Image")
+                                        .padding([.trailing,.vertical],8)
+                                        .font(.subheadline)
+                                        .foregroundColor(.black)
+                                }
+                                .background(.white)
+                                .cornerRadius(33)
+                            .padding(.leading,8)
+                            }
+                        }
+                        
+                        
+                        
+                        
                         // Complete Button
                         Button(action:{}) {
                             HStack{
@@ -159,11 +223,13 @@ struct DeepWorkSheet: View {
                             HStack{
                                 Text("Pause")
                                     .foregroundColor(.white)
+                                    .bold()
                             }
                             .frame(width: g.size.width-32, height: 44, alignment: .center)
                             .background(.gray)
                             .cornerRadius(22)
                             .padding(.horizontal)
+                            
                         }
                         
                     }
@@ -174,11 +240,24 @@ struct DeepWorkSheet: View {
                 }
             }
         }
+        .onReceive(timer){ time in
+            if pomodoroTimer > 0 {
+                pomodoroTimer -= 1
+            }
+        }
+    }
+    
+    private func stringCountDown(time : Int) -> String {
+        let minutes : Int = time / 60
+        let seconds : Int = time % 60
+        let minutesStr : String = String(minutes).count == 1 ? "0"+String(minutes) : String(minutes)
+        let secondsStr : String = String(seconds).count == 1 ? "0"+String(seconds) : String(seconds)
+        return "\(minutesStr):\(secondsStr)"
     }
 }
 
 struct DeepWorkSheet_Previews: PreviewProvider {
     static var previews: some View {
-        DeepWorkSheet()
+        DeepWorkSheet(title: "YourTitle")
     }
 }

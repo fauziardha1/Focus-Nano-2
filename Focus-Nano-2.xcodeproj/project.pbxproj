@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		052C7F81288FA788004AD1B9 /* HistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7F80288FA788004AD1B9 /* HistoryPage.swift */; };
 		052C7F87288FB37F004AD1B9 /* DeepWorkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */; };
+		052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 052DD93A2890306B007A2F6A /* Task.xcdatamodeld */; };
+		052DD94028903132007A2F6A /* TaskDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052DD93F28903132007A2F6A /* TaskDataController.swift */; };
 		05795662288F32B5009D0218 /* CreateTaskSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05795661288F32B5009D0218 /* CreateTaskSheetPage.swift */; };
 		059BD734288E94D600B4B7E4 /* Focus_Nano_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BD733288E94D600B4B7E4 /* Focus_Nano_2App.swift */; };
 		059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */; };
 		059BD738288E94D900B4B7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD737288E94D900B4B7E4 /* Assets.xcassets */; };
 		059BD73B288E94D900B4B7E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */; };
+		05BAE4E22890342F00A271D6 /* FocusTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */; };
+		05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */; };
+		05BAE4E72890FAE200A271D6 /* TaskModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */; };
+		05BAE4EA2890FB2E00A271D6 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E92890FB2E00A271D6 /* BaseModel.swift */; };
 		05C0CD19288E9E0300050675 /* JustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C0CD18288E9E0300050675 /* JustView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		052C7F80288FA788004AD1B9 /* HistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPage.swift; sourceTree = "<group>"; };
 		052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWorkSheet.swift; sourceTree = "<group>"; };
+		052DD93B2890306B007A2F6A /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
+		052DD93F28903132007A2F6A /* TaskDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataController.swift; sourceTree = "<group>"; };
 		05795661288F32B5009D0218 /* CreateTaskSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskSheetPage.swift; sourceTree = "<group>"; };
 		059BD730288E94D600B4B7E4 /* Focus-Nano-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus-Nano-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BD733288E94D600B4B7E4 /* Focus_Nano_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_Nano_2App.swift; sourceTree = "<group>"; };
 		059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskPage.swift; sourceTree = "<group>"; };
 		059BD737288E94D900B4B7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskViewModel.swift; sourceTree = "<group>"; };
+		05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewModel.swift; sourceTree = "<group>"; };
+		05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelExtensions.swift; sourceTree = "<group>"; };
+		05BAE4E92890FB2E00A271D6 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		05C0CD18288E9E0300050675 /* JustView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +100,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		052DD93D289030EA007A2F6A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				052DD93A2890306B007A2F6A /* Task.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		052DD93E2890311B007A2F6A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				052DD93F28903132007A2F6A /* TaskDataController.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		0579565E288F3281009D0218 /* CreateTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +128,7 @@
 		0579565F288F328C009D0218 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +193,7 @@
 		059BD742288E961E00B4B7E4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				05BAE4E52890FAB500A271D6 /* Model */,
 				05C0CD17288E9DE000050675 /* View */,
 			);
 			path = Helper;
@@ -179,6 +209,9 @@
 		059BD744288E97ED00B4B7E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05BAE4E82890FB1300A271D6 /* BaseModel */,
+				052DD93E2890311B007A2F6A /* DataManager */,
+				052DD93D289030EA007A2F6A /* DataModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,8 +236,25 @@
 		059BD747288E98B300B4B7E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05BAE4E52890FAB500A271D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05BAE4E82890FB1300A271D6 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				05BAE4E92890FB2E00A271D6 /* BaseModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		05C0CD17288E9DE000050675 /* View */ = {
@@ -285,9 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */,
+				05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */,
 				059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */,
 				05795662288F32B5009D0218 /* CreateTaskSheetPage.swift in Sources */,
 				052C7F87288FB37F004AD1B9 /* DeepWorkSheet.swift in Sources */,
+				05BAE4E22890342F00A271D6 /* FocusTaskViewModel.swift in Sources */,
+				05BAE4EA2890FB2E00A271D6 /* BaseModel.swift in Sources */,
+				052DD94028903132007A2F6A /* TaskDataController.swift in Sources */,
+				05BAE4E72890FAE200A271D6 /* TaskModelExtensions.swift in Sources */,
 				052C7F81288FA788004AD1B9 /* HistoryPage.swift in Sources */,
 				05C0CD19288E9E0300050675 /* JustView.swift in Sources */,
 				059BD734288E94D600B4B7E4 /* Focus_Nano_2App.swift in Sources */,
@@ -493,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		052DD93A2890306B007A2F6A /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				052DD93B2890306B007A2F6A /* Task.xcdatamodel */,
+			);
+			currentVersion = 052DD93B2890306B007A2F6A /* Task.xcdatamodel */;
+			path = Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 059BD728288E94D600B4B7E4 /* Project object */;
 }

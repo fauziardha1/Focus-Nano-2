@@ -10,14 +10,14 @@ import SwiftUI
 struct HistoryPage: View {
     @Environment(\.dismiss) var dismiss
     
-    var upComingTask :[Task] = [
-        Task(
+    var upComingTask :[Taske] = [
+        Taske(
             title: "Create Code Base Nano 2",
             dueDate: Date.now),
-        Task(
+        Taske(
             title: "Code UI for main page",
             dueDate: Date.now.addingTimeInterval(86400)),
-        Task(
+        Taske(
             title: "Add logic to main page",
             dueDate: Date.now.addingTimeInterval(86400*2)),
     ]
