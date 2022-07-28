@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct DeepWorkSheet: View {
     @Environment(\.dismiss) var dismiss
     @State private var taskNotes : String = "  Notes"
+    @ObservedObject var deepWorkVieModel : DeepWorkViewModel
     
     // for timer
     @State private var pomodoroTimer = 25*60
@@ -19,11 +21,18 @@ struct DeepWorkSheet: View {
     @State private var termsAccepted = false
     
     private let taskDoing : TaskViewModel?
-    init(taskDoing: TaskViewModel?){
+    
+    
+    init(taskDoing: TaskViewModel?, vm: DeepWorkViewModel){
         self.taskDoing = taskDoing
+        self.deepWorkVieModel = vm
+        
+        
     }
+   
 
     var body: some View{
+        
         ZStack{
             Color.gray.opacity(0.2).ignoresSafeArea()
             
@@ -90,7 +99,7 @@ struct DeepWorkSheet: View {
                         ButtonAttachment()
                         
                         // Complete Button
-                        CompletionButton(g: g, termsAccepted: $termsAccepted)
+                        CompletionButton(g: g, termsAccepted: $termsAccepted, deepWorkdViewModel: deepWorkVieModel, taskDoing: taskDoing)
                         
                         //pause button
                         PauseButton(g: g)
@@ -112,6 +121,7 @@ struct DeepWorkSheet: View {
 
 struct DeepWorkSheet_Previews: PreviewProvider {
     static var previews: some View {
-        DeepWorkSheet(taskDoing: nil)
+        let viewContext = CoreDataManager.shared.persistanceContainer.viewContext
+        DeepWorkSheet(taskDoing: nil, vm: DeepWorkViewModel(context: viewContext))
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct FocusTaskPage: View {
     @State private var isShowingCreateTaskpage = false
@@ -18,6 +19,9 @@ struct FocusTaskPage: View {
     
     // initiate vm
     @ObservedObject var focusTasksViewModel : FocusTaskViewModel
+    var id :NSManagedObjectID? = nil
+    
+   
     
     init(vm: FocusTaskViewModel){
         self.focusTasksViewModel = vm
@@ -29,9 +33,11 @@ struct FocusTaskPage: View {
     var body: some View {
         let currentTaskDay = focusTasksViewModel.tasks.first?.dueDate.getDayStr() ?? Date.now.getDayStr()
         let currentTaskHour = focusTasksViewModel.tasks.first?.dueDate.getTimeStr() ?? Date.now.getTimeStr()
+      
         
         ZStack {
             Color(UIColor.secondarySystemBackground).ignoresSafeArea()
+               
             
             GeometryReader { g in
                 VStack(alignment: .leading) {
@@ -53,7 +59,7 @@ struct FocusTaskPage: View {
                         CurrentTaskHighlight(g: g, focusTasksViewModel: focusTasksViewModel, currentTaskDay: currentTaskDay, currentTaskHour: currentTaskHour)
                             
                         // Start Deep Work Button
-                        StartDeepWorkButton(g: g, isShowingDeepWorkSheet: $isShowingDeepWorkSheet, currentTask: focusTasksViewModel.tasks.first, isTasksEmpty: focusTasksViewModel.tasks.isEmpty)
+                        StartDeepWorkButton(g: g, isShowingDeepWorkSheet: $isShowingDeepWorkSheet, currentTask: focusTasksViewModel.tasks.first, isTasksEmpty: focusTasksViewModel.tasks.isEmpty, focusTaskViewModel: focusTasksViewModel)
                     }
                     
                     // List for UpComing Task
@@ -90,11 +96,28 @@ struct FocusTaskPage: View {
     }
     
     private func deleteTask(at offsets : IndexSet){
+        let dfjaldk = focusTasksViewModel.tasks.first
+        let dummyID = dfjaldk?.id
+        
         offsets.forEach{
             index in
             let task = focusTasksViewModel.tasks[index]
+            let id = task.id
             focusTasksViewModel.deleteTask(taskID: task.id)
         }
+    }
+    
+    
+    
+    private mutating func getID(at offsets: IndexSet) {
+        
+        offsets.forEach{
+            index in
+            let task = focusTasksViewModel.tasks[index]
+            self.id = task.id
+            focusTasksViewModel.deleteTask(taskID: task.id)
+        }
+        
     }
     
 }

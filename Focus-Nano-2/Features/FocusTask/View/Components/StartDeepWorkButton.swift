@@ -7,12 +7,17 @@
 
 import Foundation
 import SwiftUI
+import CoreData
 
 struct StartDeepWorkButton: View {
     let g : GeometryProxy
     @Binding var isShowingDeepWorkSheet : Bool
     let currentTask : TaskViewModel?
     var isTasksEmpty : Bool
+    
+    @ObservedObject var focusTaskViewModel : FocusTaskViewModel
+    
+    @Environment(\.managedObjectContext) var viewContext
     
     var body: some View {
         Button(action: {
@@ -42,7 +47,15 @@ struct StartDeepWorkButton: View {
         }.padding(.horizontal)
             .disabled(isTasksEmpty)
             .sheet(isPresented: $isShowingDeepWorkSheet){
-                DeepWorkSheet(taskDoing: currentTask)
+                
+//                DeepWorkSheet(
+//                    taskDoing: currentTask,
+//                    vm: DeepWorkViewModel(context: viewContext),
+//                    id: focusTaskViewModel.tasks.first.id
+//                )
+                
+                DeepWorkSheet(taskDoing: currentTask, vm: DeepWorkViewModel(context: viewContext))
+            
             }
             .padding(.top,8)
             .shadow(color: isTasksEmpty ? .clear : .gray, radius: 2, x: 2, y: 3)

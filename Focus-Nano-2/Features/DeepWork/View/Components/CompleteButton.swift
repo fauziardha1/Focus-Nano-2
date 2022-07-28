@@ -7,16 +7,23 @@
 
 import Foundation
 import SwiftUI
+import CoreData
 
 struct CompletionButton: View {
     let g : GeometryProxy
     @Binding var termsAccepted : Bool
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var deepWorkdViewModel : DeepWorkViewModel
+    let taskDoing : TaskViewModel?
     
     var body: some View {
         Button(action:{
             
             termsAccepted.toggle()
+            if taskDoing != nil {
+                deepWorkdViewModel.updateTask(task: taskDoing!, status: true)
+            }
+            
             
         }) {
             HStack{

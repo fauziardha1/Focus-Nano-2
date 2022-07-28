@@ -35,6 +35,7 @@
 		059BD738288E94D900B4B7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD737288E94D900B4B7E4 /* Assets.xcassets */; };
 		059BD73B288E94D900B4B7E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */; };
 		059D0502289263CC0041BBBB /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D0501289263CC0041BBBB /* TaskViewModel.swift */; };
+		059D0504289272F70041BBBB /* DeepWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D0503289272F70041BBBB /* DeepWorkViewModel.swift */; };
 		05BAE4E22890342F00A271D6 /* FocusTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */; };
 		05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */; };
 		05BAE4E72890FAE200A271D6 /* TaskModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */; };
@@ -72,6 +73,7 @@
 		059BD737288E94D900B4B7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		059D0501289263CC0041BBBB /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		059D0503289272F70041BBBB /* DeepWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWorkViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelExtensions.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		052C7F83288FB353004AD1B9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				059D0503289272F70041BBBB /* DeepWorkViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				05679FD12891F6DB00CBBD5E /* AttachmentButton.swift in Sources */,
 				05679FDC2891FC7D00CBBD5E /* FocusTaskNavbar.swift in Sources */,
 				059BD734288E94D600B4B7E4 /* Focus_Nano_2App.swift in Sources */,
+				059D0504289272F70041BBBB /* DeepWorkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

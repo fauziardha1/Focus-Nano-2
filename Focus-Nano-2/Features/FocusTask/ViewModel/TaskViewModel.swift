@@ -27,7 +27,7 @@ class TaskViewModel : Identifiable{
         task.due_date ?? Date.now
     }
     
-    var idDone : Bool {
+    var isDone : Bool {
         task.is_done
     }
 }

@@ -49,6 +49,21 @@ class FocusTaskViewModel : NSObject, ObservableObject {
         }
     }
     
+    // update a task
+    func updateTask(taskID: NSManagedObjectID,  status : Bool){
+        do{
+            guard let task = try context.existingObject(with: taskID) as? Task else{
+                return
+            }
+            
+            task.is_done = true
+           try task.save()
+            
+        }catch {
+            debugPrint(error)
+        }
+    }
+    
     
 }
 
