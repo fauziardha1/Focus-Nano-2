@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052282682892F642005A1096 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052282672892F642005A1096 /* MainView.swift */; };
 		052C7F81288FA788004AD1B9 /* HistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7F80288FA788004AD1B9 /* HistoryPage.swift */; };
 		052C7F87288FB37F004AD1B9 /* DeepWorkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */; };
 		052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 052DD93A2890306B007A2F6A /* Task.xcdatamodeld */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052282672892F642005A1096 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		052C7F80288FA788004AD1B9 /* HistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPage.swift; sourceTree = "<group>"; };
 		052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWorkSheet.swift; sourceTree = "<group>"; };
 		052DD93B2890306B007A2F6A /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		059BD741288E95FC00B4B7E4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				052282672892F642005A1096 /* MainView.swift */,
 				052C7F82288FB348004AD1B9 /* DeepWork */,
 				052C7F7D288FA75B004AD1B9 /* History */,
 				0579565E288F3281009D0218 /* CreateTask */,
@@ -434,6 +437,7 @@
 				052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */,
 				05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */,
 				054B1C5B2891D71900BCC73B /* NavbarView.swift in Sources */,
+				052282682892F642005A1096 /* MainView.swift in Sources */,
 				059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */,
 				05679FD52891F71900CBBD5E /* PauseButton.swift in Sources */,
 				05795662288F32B5009D0218 /* CreateTaskSheetPage.swift in Sources */,

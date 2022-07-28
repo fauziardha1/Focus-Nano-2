@@ -24,7 +24,6 @@ struct CompletionButton: View {
                 deepWorkdViewModel.updateTask(task: taskDoing!, status: true)
             }
             
-            
         }) {
             HStack{
                 Text("I have complete this task")

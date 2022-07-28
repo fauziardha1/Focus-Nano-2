@@ -16,7 +16,6 @@ class DeepWorkViewModel : ObservableObject {
         self.context = context
     }
     
-    
     // update a task
     func updateTask(task: TaskViewModel,  status : Bool){
         do{

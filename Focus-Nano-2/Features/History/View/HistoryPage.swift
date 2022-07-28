@@ -41,8 +41,8 @@ struct HistoryPage: View {
                             dismiss()
                             
                         }, label: {
-                                Text("Back")
-                                .foregroundColor(Color(UIColor.systemGreen.darker(by: 30.0)!))
+                                //Text("Back")
+                                //.foregroundColor(Color(UIColor.systemGreen.darker(by: 30.0)!))
                                     
                             })
                             .padding(.leading)

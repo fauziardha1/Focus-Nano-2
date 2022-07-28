@@ -12,9 +12,8 @@ struct Focus_Nano_2App: App {
     var body: some Scene {
         WindowGroup {
             let viewContext = CoreDataManager.shared.persistanceContainer.viewContext
-            FocusTaskPage(vm: FocusTaskViewModel(context: viewContext))
-                .environment(\.managedObjectContext, viewContext) 
-//                .environment(\.managedObjectContext, TaskDataController().container.viewContext)
+            MainView()
+                .environment(\.managedObjectContext, viewContext)
         }
     }
 }
