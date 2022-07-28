@@ -30,8 +30,10 @@ class FocusTaskViewModel : NSObject, ObservableObject {
             }
             self.tasks = tasks.map(TaskViewModel.init)
         } catch {
-            print(error)
+            debugPrint(error)
         }
+        
+        self.tasks = self.tasks.sorted(by: {$0.dueDate.compare($1.dueDate) == .orderedAscending})
     }
     
     func deleteTask(taskID : NSManagedObjectID)  {
@@ -43,7 +45,7 @@ class FocusTaskViewModel : NSObject, ObservableObject {
             try task.delete()
             
         }catch {
-            print(error)
+            debugPrint(error)
         }
     }
     
@@ -81,6 +83,6 @@ class TaskViewModel : Identifiable{
     }
     
     var idDone : Bool {
-        task.is_done ?? false
+        task.is_done
     }
 }

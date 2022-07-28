@@ -12,7 +12,7 @@ import CoreData
 class CreateTaskViewModel : ObservableObject {
     
     @Published var title : String = ""
-    @Published var dueDate : Date = Date.now 
+    @Published var dueDate : Date?
     
     var context : NSManagedObjectContext
     
@@ -31,7 +31,11 @@ class CreateTaskViewModel : ObservableObject {
             
             try task.save()
         } catch{
-            print(error)
+            debugPrint(error)
         }
     }
+}
+
+class DueDatePikerModel: ObservableObject {
+    @Published var dueDate: Date = Date()
 }

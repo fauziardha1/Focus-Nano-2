@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+struct Taske : Identifiable, Hashable {
+    let title : String
+    let dueDate : Date
+    let id = UUID()
+}
+
 struct HistoryPage: View {
     @Environment(\.dismiss) var dismiss
     

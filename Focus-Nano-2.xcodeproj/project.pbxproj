@@ -11,6 +11,24 @@
 		052C7F87288FB37F004AD1B9 /* DeepWorkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */; };
 		052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 052DD93A2890306B007A2F6A /* Task.xcdatamodeld */; };
 		052DD94028903132007A2F6A /* TaskDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052DD93F28903132007A2F6A /* TaskDataController.swift */; };
+		054B1C552891B38D00BCC73B /* DismissHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C542891B38D00BCC73B /* DismissHelper.swift */; };
+		054B1C582891D2A900BCC73B /* DateTimeExensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C572891D2A900BCC73B /* DateTimeExensions.swift */; };
+		054B1C5B2891D71900BCC73B /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C5A2891D71900BCC73B /* NavbarView.swift */; };
+		054B1C5D2891D75500BCC73B /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C5C2891D75500BCC73B /* TimePickerView.swift */; };
+		054B1C5F2891D77D00BCC73B /* DueDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C5E2891D77D00BCC73B /* DueDatePickerView.swift */; };
+		05679FC92891F62500CBBD5E /* DeepWorkNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FC82891F62500CBBD5E /* DeepWorkNavBar.swift */; };
+		05679FCB2891F66300CBBD5E /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FCA2891F66300CBBD5E /* PomodoroTimer.swift */; };
+		05679FCD2891F68B00CBBD5E /* DueDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FCC2891F68B00CBBD5E /* DueDateView.swift */; };
+		05679FCF2891F6B300CBBD5E /* DueTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FCE2891F6B300CBBD5E /* DueTimeView.swift */; };
+		05679FD12891F6DB00CBBD5E /* AttachmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FD02891F6DB00CBBD5E /* AttachmentButton.swift */; };
+		05679FD32891F6FA00CBBD5E /* CompleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FD22891F6FA00CBBD5E /* CompleteButton.swift */; };
+		05679FD52891F71900CBBD5E /* PauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FD42891F71900CBBD5E /* PauseButton.swift */; };
+		05679FD82891FC0600CBBD5E /* ListFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FD72891FC0600CBBD5E /* ListFooter.swift */; };
+		05679FDA2891FC4000CBBD5E /* CurrentTaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FD92891FC4000CBBD5E /* CurrentTaskCard.swift */; };
+		05679FDC2891FC7D00CBBD5E /* FocusTaskNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FDB2891FC7D00CBBD5E /* FocusTaskNavbar.swift */; };
+		05679FDE2891FCA300CBBD5E /* PageTitleWithAva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FDD2891FCA300CBBD5E /* PageTitleWithAva.swift */; };
+		05679FE02891FCBF00CBBD5E /* StartDeepWorkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FDF2891FCBF00CBBD5E /* StartDeepWorkButton.swift */; };
+		05679FE22891FCEC00CBBD5E /* UpComingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05679FE12891FCEC00CBBD5E /* UpComingTaskView.swift */; };
 		05795662288F32B5009D0218 /* CreateTaskSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05795661288F32B5009D0218 /* CreateTaskSheetPage.swift */; };
 		059BD734288E94D600B4B7E4 /* Focus_Nano_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BD733288E94D600B4B7E4 /* Focus_Nano_2App.swift */; };
 		059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */; };
@@ -28,6 +46,24 @@
 		052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWorkSheet.swift; sourceTree = "<group>"; };
 		052DD93B2890306B007A2F6A /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 		052DD93F28903132007A2F6A /* TaskDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataController.swift; sourceTree = "<group>"; };
+		054B1C542891B38D00BCC73B /* DismissHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissHelper.swift; sourceTree = "<group>"; };
+		054B1C572891D2A900BCC73B /* DateTimeExensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeExensions.swift; sourceTree = "<group>"; };
+		054B1C5A2891D71900BCC73B /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		054B1C5C2891D75500BCC73B /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		054B1C5E2891D77D00BCC73B /* DueDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDatePickerView.swift; sourceTree = "<group>"; };
+		05679FC82891F62500CBBD5E /* DeepWorkNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWorkNavBar.swift; sourceTree = "<group>"; };
+		05679FCA2891F66300CBBD5E /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
+		05679FCC2891F68B00CBBD5E /* DueDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDateView.swift; sourceTree = "<group>"; };
+		05679FCE2891F6B300CBBD5E /* DueTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueTimeView.swift; sourceTree = "<group>"; };
+		05679FD02891F6DB00CBBD5E /* AttachmentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButton.swift; sourceTree = "<group>"; };
+		05679FD22891F6FA00CBBD5E /* CompleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteButton.swift; sourceTree = "<group>"; };
+		05679FD42891F71900CBBD5E /* PauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButton.swift; sourceTree = "<group>"; };
+		05679FD72891FC0600CBBD5E /* ListFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFooter.swift; sourceTree = "<group>"; };
+		05679FD92891FC4000CBBD5E /* CurrentTaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTaskCard.swift; sourceTree = "<group>"; };
+		05679FDB2891FC7D00CBBD5E /* FocusTaskNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskNavbar.swift; sourceTree = "<group>"; };
+		05679FDD2891FCA300CBBD5E /* PageTitleWithAva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleWithAva.swift; sourceTree = "<group>"; };
+		05679FDF2891FCBF00CBBD5E /* StartDeepWorkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDeepWorkButton.swift; sourceTree = "<group>"; };
+		05679FE12891FCEC00CBBD5E /* UpComingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingTaskView.swift; sourceTree = "<group>"; };
 		05795661288F32B5009D0218 /* CreateTaskSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskSheetPage.swift; sourceTree = "<group>"; };
 		059BD730288E94D600B4B7E4 /* Focus-Nano-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus-Nano-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059BD733288E94D600B4B7E4 /* Focus_Nano_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_Nano_2App.swift; sourceTree = "<group>"; };
@@ -95,6 +131,7 @@
 		052C7F85288FB368004AD1B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05679FC62891F5E700CBBD5E /* Components */,
 				052C7F86288FB37F004AD1B9 /* DeepWorkSheet.swift */,
 			);
 			path = View;
@@ -114,6 +151,51 @@
 				052DD93F28903132007A2F6A /* TaskDataController.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		054B1C562891D29100BCC73B /* DateTime */ = {
+			isa = PBXGroup;
+			children = (
+				054B1C572891D2A900BCC73B /* DateTimeExensions.swift */,
+			);
+			path = DateTime;
+			sourceTree = "<group>";
+		};
+		054B1C592891D70400BCC73B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				054B1C5A2891D71900BCC73B /* NavbarView.swift */,
+				054B1C5C2891D75500BCC73B /* TimePickerView.swift */,
+				054B1C5E2891D77D00BCC73B /* DueDatePickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05679FC62891F5E700CBBD5E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				05679FC82891F62500CBBD5E /* DeepWorkNavBar.swift */,
+				05679FCA2891F66300CBBD5E /* PomodoroTimer.swift */,
+				05679FCC2891F68B00CBBD5E /* DueDateView.swift */,
+				05679FCE2891F6B300CBBD5E /* DueTimeView.swift */,
+				05679FD02891F6DB00CBBD5E /* AttachmentButton.swift */,
+				05679FD22891F6FA00CBBD5E /* CompleteButton.swift */,
+				05679FD42891F71900CBBD5E /* PauseButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05679FD62891FBF100CBBD5E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				05679FD72891FC0600CBBD5E /* ListFooter.swift */,
+				05679FD92891FC4000CBBD5E /* CurrentTaskCard.swift */,
+				05679FDB2891FC7D00CBBD5E /* FocusTaskNavbar.swift */,
+				05679FDD2891FCA300CBBD5E /* PageTitleWithAva.swift */,
+				05679FDF2891FCBF00CBBD5E /* StartDeepWorkButton.swift */,
+				05679FE12891FCEC00CBBD5E /* UpComingTaskView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0579565E288F3281009D0218 /* CreateTask */ = {
@@ -136,6 +218,7 @@
 		05795660288F329A009D0218 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				054B1C592891D70400BCC73B /* Components */,
 				05795661288F32B5009D0218 /* CreateTaskSheetPage.swift */,
 			);
 			path = View;
@@ -193,6 +276,7 @@
 		059BD742288E961E00B4B7E4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				054B1C562891D29100BCC73B /* DateTime */,
 				05BAE4E52890FAB500A271D6 /* Model */,
 				05C0CD17288E9DE000050675 /* View */,
 			);
@@ -202,6 +286,7 @@
 		059BD743288E968B00B4B7E4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				052DD93E2890311B007A2F6A /* DataManager */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -210,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				05BAE4E82890FB1300A271D6 /* BaseModel */,
-				052DD93E2890311B007A2F6A /* DataManager */,
 				052DD93D289030EA007A2F6A /* DataModel */,
 			);
 			path = Model;
@@ -228,6 +312,7 @@
 		059BD746288E98AE00B4B7E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05679FD62891FBF100CBBD5E /* Components */,
 				059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */,
 			);
 			path = View;
@@ -261,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				05C0CD18288E9E0300050675 /* JustView.swift */,
+				054B1C542891B38D00BCC73B /* DismissHelper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,17 +421,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05679FD32891F6FA00CBBD5E /* CompleteButton.swift in Sources */,
+				054B1C5F2891D77D00BCC73B /* DueDatePickerView.swift in Sources */,
+				05679FDA2891FC4000CBBD5E /* CurrentTaskCard.swift in Sources */,
+				05679FE02891FCBF00CBBD5E /* StartDeepWorkButton.swift in Sources */,
 				052DD93C2890306B007A2F6A /* Task.xcdatamodeld in Sources */,
 				05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */,
+				054B1C5B2891D71900BCC73B /* NavbarView.swift in Sources */,
 				059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */,
+				05679FD52891F71900CBBD5E /* PauseButton.swift in Sources */,
 				05795662288F32B5009D0218 /* CreateTaskSheetPage.swift in Sources */,
+				05679FD82891FC0600CBBD5E /* ListFooter.swift in Sources */,
+				05679FCF2891F6B300CBBD5E /* DueTimeView.swift in Sources */,
 				052C7F87288FB37F004AD1B9 /* DeepWorkSheet.swift in Sources */,
 				05BAE4E22890342F00A271D6 /* FocusTaskViewModel.swift in Sources */,
+				054B1C5D2891D75500BCC73B /* TimePickerView.swift in Sources */,
 				05BAE4EA2890FB2E00A271D6 /* BaseModel.swift in Sources */,
+				054B1C552891B38D00BCC73B /* DismissHelper.swift in Sources */,
 				052DD94028903132007A2F6A /* TaskDataController.swift in Sources */,
+				05679FC92891F62500CBBD5E /* DeepWorkNavBar.swift in Sources */,
+				054B1C582891D2A900BCC73B /* DateTimeExensions.swift in Sources */,
 				05BAE4E72890FAE200A271D6 /* TaskModelExtensions.swift in Sources */,
+				05679FDE2891FCA300CBBD5E /* PageTitleWithAva.swift in Sources */,
+				05679FCD2891F68B00CBBD5E /* DueDateView.swift in Sources */,
+				05679FE22891FCEC00CBBD5E /* UpComingTaskView.swift in Sources */,
 				052C7F81288FA788004AD1B9 /* HistoryPage.swift in Sources */,
+				05679FCB2891F66300CBBD5E /* PomodoroTimer.swift in Sources */,
 				05C0CD19288E9E0300050675 /* JustView.swift in Sources */,
+				05679FD12891F6DB00CBBD5E /* AttachmentButton.swift in Sources */,
+				05679FDC2891FC7D00CBBD5E /* FocusTaskNavbar.swift in Sources */,
 				059BD734288E94D600B4B7E4 /* Focus_Nano_2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
