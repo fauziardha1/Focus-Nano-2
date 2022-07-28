@@ -15,8 +15,9 @@ struct CompletionButton: View {
     
     var body: some View {
         Button(action:{
+            
             termsAccepted.toggle()
-            dismiss()
+            
         }) {
             HStack{
                 Text("I have complete this task")
@@ -28,6 +29,16 @@ struct CompletionButton: View {
             .cornerRadius(22)
             .padding(.horizontal)
             .padding(.top,24)
+        }
+        .alert(isPresented: $termsAccepted ) {
+                    Alert(
+                        title: Text("You dit it!"),
+                        message: Text("Great Job"),
+                        dismissButton: .default(
+                            Text("Got it!"),
+                            action: {dismiss()}
+                        )
+                    )
         }
     }
 }

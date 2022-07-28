@@ -27,8 +27,8 @@ struct FocusTaskPage: View {
     
 
     var body: some View {
-        let currentTaskDay = currentTask?.dueDate.getDayStr() ?? Date.now.getDayStr()
-        let currentTaskHour = currentTask?.dueDate.getTimeStr() ?? Date.now.getTimeStr()
+        let currentTaskDay = focusTasksViewModel.tasks.first?.dueDate.getDayStr() ?? Date.now.getDayStr()
+        let currentTaskHour = focusTasksViewModel.tasks.first?.dueDate.getTimeStr() ?? Date.now.getTimeStr()
         
         ZStack {
             Color(UIColor.secondarySystemBackground).ignoresSafeArea()

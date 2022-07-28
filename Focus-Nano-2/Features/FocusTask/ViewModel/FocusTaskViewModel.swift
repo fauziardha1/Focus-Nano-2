@@ -62,7 +62,6 @@ extension FocusTaskViewModel : NSFetchedResultsControllerDelegate{
     }
 }
 
-
 class TaskViewModel : Identifiable{
     private var task : Task
     
