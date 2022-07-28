@@ -34,6 +34,7 @@
 		059BD736288E94D600B4B7E4 /* FocusTaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */; };
 		059BD738288E94D900B4B7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD737288E94D900B4B7E4 /* Assets.xcassets */; };
 		059BD73B288E94D900B4B7E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */; };
+		059D0502289263CC0041BBBB /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D0501289263CC0041BBBB /* TaskViewModel.swift */; };
 		05BAE4E22890342F00A271D6 /* FocusTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */; };
 		05BAE4E42890F8DE00A271D6 /* CreateTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */; };
 		05BAE4E72890FAE200A271D6 /* TaskModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */; };
@@ -70,6 +71,7 @@
 		059BD735288E94D600B4B7E4 /* FocusTaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskPage.swift; sourceTree = "<group>"; };
 		059BD737288E94D900B4B7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		059BD73A288E94D900B4B7E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		059D0501289263CC0041BBBB /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTaskViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E32890F8DE00A271D6 /* CreateTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewModel.swift; sourceTree = "<group>"; };
 		05BAE4E62890FAE200A271D6 /* TaskModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModelExtensions.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				05BAE4E12890342F00A271D6 /* FocusTaskViewModel.swift */,
+				059D0501289263CC0041BBBB /* TaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				054B1C5D2891D75500BCC73B /* TimePickerView.swift in Sources */,
 				05BAE4EA2890FB2E00A271D6 /* BaseModel.swift in Sources */,
 				054B1C552891B38D00BCC73B /* DismissHelper.swift in Sources */,
+				059D0502289263CC0041BBBB /* TaskViewModel.swift in Sources */,
 				052DD94028903132007A2F6A /* TaskDataController.swift in Sources */,
 				05679FC92891F62500CBBD5E /* DeepWorkNavBar.swift in Sources */,
 				054B1C582891D2A900BCC73B /* DateTimeExensions.swift in Sources */,

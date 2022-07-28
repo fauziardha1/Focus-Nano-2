@@ -61,27 +61,3 @@ extension FocusTaskViewModel : NSFetchedResultsControllerDelegate{
         self.tasks = tasks.map(TaskViewModel.init)
     }
 }
-
-class TaskViewModel : Identifiable{
-    private var task : Task
-    
-    init(task: Task) {
-        self.task = task
-    }
-    
-    var id : NSManagedObjectID{
-        task.objectID
-    }
-    
-    var title : String {
-        task.title ?? ""
-    }
-    
-    var dueDate : Date {
-        task.due_date ?? Date.now
-    }
-    
-    var idDone : Bool {
-        task.is_done
-    }
-}
